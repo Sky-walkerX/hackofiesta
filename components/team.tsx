@@ -35,9 +35,9 @@ export function TeamGrid({ title, images, backgroundImage }: ImageGridProps) {
         {/* Images Grid */}
         <div className="w-full max-w-6xl">
           <div
-            className="grid gap-4 sm:gap-6 md:gap-8"
+            className="grid gap-4 sm:gap-6 md:gap-8 sm:grid"
             style={{
-              gridTemplateColumns: `repeat(auto-fit, minmax(250px, 1fr))`,
+              gridTemplateColumns: `repeat(auto-fit, minmax(150px, 1fr))`,
             }}
           >
             {images.map((image) => (
@@ -49,7 +49,7 @@ export function TeamGrid({ title, images, backgroundImage }: ImageGridProps) {
                     alt={image.alt}
                     width={100}
                     height={100}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover sm:h-2xl sm:w-xl"
                     priority={false}
                   />
                 </div>
